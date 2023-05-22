@@ -8,7 +8,7 @@
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Roboto";
+  --heading-font: "Roboto", 'Bradley Hand', sans-serif;;
   --paragraph-font: "Merriweather", Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -25,16 +25,26 @@
 
 body{
     background-color: #fcfbfb; 
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
-
+h2 {
+    margin: 0;
+}
 #content{
     max-width: 1600px;
     margin: 0 auto;
+}
+#logo_link{
+    padding-bottom: 5px;
 }
 .logo{
     width: 120px;
 }
 nav a{
+    padding: 35px;
     text-align: center;
     text-decoration: none;
     color: var(--nav-link-color);
@@ -52,13 +62,18 @@ nav a:hover{
 }
 .card-img{
     width: 400px;
+    padding-top: 10px;
+    border: 10px solid var(--paragraph-color-on-white);
 }
 header{
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
 }
 .home-title{
+    font-size: 2em;
+    font-family: var(--heading-font);
     color: var( --paragraph-color-on-white); 
+    margin-top: 10px;
 }
 h4{
     color: var( --paragraph-color-on-white);
@@ -67,20 +82,31 @@ h4{
     text-align: center;
 }
 .book, .join{
+    font-size: 18px;
+    font-family: var(--paragraph-font);
     text-align: center;
     text-decoration: none;
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
+    padding: 15px 35px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
 }
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+} 
 .button-box{
     text-align: center;
 }
 main section{
     text-align: center;
+}
+main section img {
+    box-sizing: border-box;
 }
 #background {
     height: 725px;
@@ -89,16 +115,22 @@ main section{
 .msg{
     background-color: #1D3557;
     text-align: center;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2{
     color: var( --paragraph-color-on-color); 
 }
 .msg p{
+    font-size: .8em;
     color: var( --paragraph-color-on-color);
+    padding-bottom: 15px;
 }
 footer{
     background-color: #1D3557;
     color: #FFFFFf;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     color: var(--nav-link-color);
@@ -111,7 +143,10 @@ footer p {
 }  
 footer p a:hover {
     text-decoration: underline;
-}    
+} 
+footer .social img {
+    padding-top: 15px;   
+}
 footer a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
