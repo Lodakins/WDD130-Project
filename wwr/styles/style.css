@@ -194,6 +194,43 @@ main section img {
     color: var( --paragraph-background-color);
     padding-bottom: 15px;
 }
+
+/* ===============
+    FAQ CSS
+==========================*/
+#sub-header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#sub-header .faq{
+    font-size: 40px;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+#sub-header img{
+    width: 100%;
+}
+#sub-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#faq-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    grid-gap: 20px;
+}
+.faq-header{
+    font-family:  var(--heading-font);
+}
+.faq-body{
+    font-family:  var(--paragraph-font);
+    font-size: 14px;
+    line-height: 1.7em;
+}
 footer{
     padding: 25px 50px;
     margin-top: 200px; 
